@@ -1,0 +1,75 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title テスト/
+    %link{:href => "chat.css", :rel => "stylesheet"}/
+  %body
+    .notification
+      .side
+        .side__user
+          .side__user-content
+            %p.side__user-name
+              ユーザー名
+            %a.side__user--new-group
+              アイコン１
+            %a.side__user--edit-user
+              アイコン２
+        .side__group
+          .side__group-content
+            %p.side__group-name
+              グループ名
+            %p.side__group-message
+              メッセージ
+      .main
+        .main__header
+          .main__header-group
+            .main__header-group-name
+              グループ名が表示される
+            .main__header-group-edit-btn{href: '/'}
+              Edit
+            .main__header-member
+              メンバー名が表示される
+
+
+        .main__body
+          .main__body-message
+            .main__body-message-name
+              masayoshi_kuraya
+            .main__body-message-time
+              2018/12/21 10:18:00
+            .main__body-message-body
+              テストテストテスト
+
+        .main__footer
+          .main__footer-form
+            .main__footer-body
+              %input{type: "text", placeholder: "type a message",class:"main_footer-message"}
+              %label.upload-label{for: "upload-icon",}
+              %input_image.image{name: "message", type: "file"}/
+              %i.fa.fa-image
+              %input.submit{type: "submit", value: "Send"}/
+
+
+
+/ .main__form
+/         %input{type: 'text', placeholder: 'type a message', class: 'main__form--comment'}
+/         %label.upload-label{for: "upload-icon"}
+/           %i.fa.fa-picture-o
+/           %input{type: "file", id: "upload-icon" }
+/         = link_to "Send", "/", class: 'main__form--icon'
+
+
+
+
+
+
+/   .footer
+/    .footer__body
+/     .footer__box--message
+/      type a message
+/     .footer__box--image
+/      %i.fa.fa-picture-o
+/    .footer__submit
+/     send
