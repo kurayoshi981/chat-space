@@ -12,10 +12,9 @@
           .side__user-content
             %p.side__user-name
               ユーザー名
-            %a.side__user--new-group
-              アイコン１
-            %a.side__user--edit-user
-              アイコン２
+            .side__user-icon
+              %i.fa.fa-edit{href: '/'}
+              %i.fa.fa-cog{href: '/'}
         .side__group
           .side__group-content
             %p.side__group-name
@@ -49,27 +48,6 @@
               %label.upload-label{for: "upload-icon",}
               %input_image.image{name: "message", type: "file"}/
               %i.fa.fa-image
-              %input.submit{type: "submit", value: "Send"}/
+              %input.submit{type: "submit", value: "Send"}
 
 
-
-/ .main__form
-/         %input{type: 'text', placeholder: 'type a message', class: 'main__form--comment'}
-/         %label.upload-label{for: "upload-icon"}
-/           %i.fa.fa-picture-o
-/           %input{type: "file", id: "upload-icon" }
-/         = link_to "Send", "/", class: 'main__form--icon'
-
-
-
-
-
-
-/   .footer
-/    .footer__body
-/     .footer__box--message
-/      type a message
-/     .footer__box--image
-/      %i.fa.fa-picture-o
-/    .footer__submit
-/     send

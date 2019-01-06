@@ -149,40 +149,34 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
   height: 100vh;
   width: 300px;
   float: left;
-
     &__user {
       height: 15%;
       width: 100%;
       background-color: #253141;
       display: flex;
       align-items: center;
-
         &-content {
           height: 50px;
           width: 100%;
           line-height: 50px;
           margin: 0 20px ;
-            }
+          }
           &-name {
             font-size: 16px;
             font-weight: bold;
             color: #fff;
+            float: left;
             }
-          &-new-group {
-
-            }
-          &-edit-user {
+          &-icon {
+            float: right;
+            color: #fff;
             }
       }
-
-
 
   &__group {
     height: 85%;
     width: 100%;
     background-color: #2f3e51;
-
-
     &-content {
       height: 50px;
       width: 100%;
@@ -197,12 +191,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         padding-top: 5px;
         color: #fff;
         }
-
     }
-
   }
-
-
 
 
 
@@ -216,14 +206,12 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         &-group {
           height:50px;
           margin: 0 40px;
-
             &-name {
               font-size:20px;
               width: 50%;
               color:#333;
               margin:35px 0 15px;
               float: left;
-              // padding: 35px 0 15px;
               }
             &-edit-btn {
               margin: 28px 20px 0;
@@ -243,11 +231,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         }
     &__body {
       height: calc( 100vh - 15% - 90px );
-      // background-color: #AAAAAA;
-
       &-message {
         padding:26px 0 0 46px;
-
         &-name {
           color: #434A54;
           font-size: 16px;
@@ -266,6 +251,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
           }
         }
       }
+
     &__footer {
       height: 90px;
       width: 100%;
@@ -273,28 +259,23 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
       &-form {
         margin: 0 40px;
         position: relative;
-      }
+        }
       &-body {
         height: 50px;
         width: calc( 100% - 130px );
         padding: 15px 10px;
-        // margin: 20px 0;
         border: none;
-
       label {
         position: absolute;
         right:200px;
         bottom:0.5px;
-      }
-
-
+        }
       .main_footer-message {
         width: calc( 100% - 50px );
         padding: 15px 10px;
         border: none;
         float: left;
-      }
-
+        }
       }
       .submit {
         color: #fff;
@@ -307,56 +288,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
         top: 0;
         right: 0;
         border: none;
+        }
       }
-
     }
-
-
-    }
-
-
-
-
-
-// .footer {
-//    background-color: $light-gray;
-//    height:50px;
-//    padding: 20px 50px 20px 40px;
-//    position:fixed;
-//    width: calc(100% - 340px);
-//    bottom: 0;
-//    display: flex;
-
-//    &__box {
-//      border: none;
-//      box-sizing: border-box;
-//      height: 50px;
-//      padding: 0 10px;
-//      width: calc(100% - 150px);
-//      line-height: 50px;
-//      color: #434A54;
-//      font-size: 16px;
-//      background-color: $white;
-//       &--message {
-//         float: left;
-//         height: 50px;
-//       }
-
-//       &--image {
-//         float: right;
-//         font-size: 20px;
-//       }
-//     }
-
-//    &__submit {
-//     background-color: $light_blue;
-//     border: none;
-//     color: #FFFFFF;
-//     font-size: 16px;
-//     line-height: 50px;
-//     margin-left: 15px;
-//     padding: 0 30px;
-//    }
-// }
-
 
