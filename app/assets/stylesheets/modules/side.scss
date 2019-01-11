@@ -1,0 +1,48 @@
+.side {
+  height: 100vh;
+  width: 300px;
+  float: left;
+    &__user {
+      height: 15%;
+      width: 100%;
+      background-color: #253141;
+      display: flex;
+      align-items: center;
+        &-content {
+          height: 50px;
+          width: 100%;
+          line-height: 50px;
+          margin: 0 20px ;
+          }
+          &-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            float: left;
+            }
+          &-icon {
+            float: right;
+            color: #fff;
+            }
+      }
+
+  &__group {
+    height: 85%;
+    width: 100%;
+    background-color: #2f3e51;
+    &-content {
+      height: 50px;
+      width: 100%;
+      padding:20px 20px 40px;
+      }
+      &-name {
+        font-size: 15px;
+        color:  #fff;
+        }
+      &-message {
+        font-size: 11px;
+        padding-top: 5px;
+        color: #fff;
+        }
+    }
+  }

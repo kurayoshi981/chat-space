@@ -1,0 +1,99 @@
+.main {
+    // height: 100vh;
+    width: calc(100% - 300px);
+    float: right;
+    &__header {
+        height: 15vh;
+        width: 100%;
+        &-group {
+          height:50px;
+          margin: 0 40px;
+            &-name {
+              font-size:20px;
+              width: 50%;
+              color:#333;
+              margin:35px 0 15px;
+              float: left;
+              }
+            &-edit-btn {
+              margin: 28px 20px 0;
+              text-decoration: none;
+              width: 20px;
+              border: solid 1px #38AEF0;
+              font-size: 15px;
+              padding: 12.5px 20px;
+              float: right;
+              }
+            }
+        &-member {
+          font-size: 12px;
+          color: #999;
+          clear:left;
+          }
+        }
+    &__body {
+      height: calc(100vh - 15vh - 90px);
+      &-message {
+        padding:26px 0 0 46px;
+        &-name {
+          color: #434A54;
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+          }
+        &-time {
+          color: silver;
+          font-size: 12px;
+          font-weight: bold;
+          float:left;
+          }
+        &-body {
+          font-size: 12px;
+          clear:both;
+          }
+        }
+      }
+
+    &__footer {
+      height: 90px;
+      width: 100%;
+      background-color: #B8C3C7;
+      &-form {
+        margin: 0 40px;
+        position: relative;
+        }
+      &-body {
+        height: 50px;
+        width: calc( 100% - 130px );
+        padding: 15px 10px;
+        border: none;
+      label {
+        position: absolute;
+        right:200px;
+        bottom:0.5px;
+        }
+      .main_footer-message {
+        width: calc( 100% - 50px );
+        padding: 15px 10px;
+        border: none;
+        float: left;
+        }
+      .main__footer-icon{
+        float: right;
+        margin-top: 15px;
+        }
+      }
+      .submit {
+        color: #fff;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        background-color: #38AEF0;
+        margin: 20px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        }
+      }
+    }

@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-
-
-  get 'messages' => 'messages#index'
-
-  get 'messages/new'
-
-  get 'messages/create'
-
+  devise_for :users
+  root 'messages#index'
+  resources :users, only: [:edit, :update]
 end
