@@ -26,6 +26,8 @@
             }
       }
 
+
+
   &__group {
     height: 85%;
     width: 100%;
@@ -34,10 +36,12 @@
       height: 50px;
       width: 100%;
       padding:20px 20px 40px;
+      text-decoration: none;
       }
       &-name {
         font-size: 15px;
         color:  #fff;
+        text-decoration: none;
         }
       &-message {
         font-size: 11px;
@@ -46,3 +50,4 @@
         }
     }
   }
+

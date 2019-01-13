@@ -9,8 +9,10 @@
         = link_to edit_user_path(current_user) do
           = fa_icon 'cog', class: 'icon'
   .side__group
-    .side__group-content
-      %p.side__group-name
-        グループ名
-      %p.side__group-message
-        メッセージ
+    - current_user.groups.each do |group|
+      .side__group-content
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
