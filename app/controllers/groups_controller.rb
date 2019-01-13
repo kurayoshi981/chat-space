@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   def index
   end
 
- def new
+  def new
     @group = Group.new
     @group.users << current_user
   end
@@ -23,11 +23,11 @@ class GroupsController < ApplicationController
       redirect_to group_messages_path(@group), notice: 'グループを編集しました'
     else
       render :edit
+    end
   end
 
+private
 
-
-  private
   def group_params
     params.require(:group).permit(:name, { :user_ids => [] })
   end
