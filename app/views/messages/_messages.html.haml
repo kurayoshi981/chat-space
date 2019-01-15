@@ -1,0 +1,35 @@
+.main
+  .main__header
+    .main__header-group
+      .main__header-group-name
+        グループ名が表示される
+      .main__header-group-edit-btn{href: '/'}
+        Edit
+      .main__header-member
+        メンバー名が表示される
+
+
+  .main__body
+    .main__body-message
+      .main__body-message-name
+
+      .main__body-message-time
+
+      .main__body-message-body
+
+        %p.lower-message__content
+
+
+
+  .main__form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
+
+
+
+
