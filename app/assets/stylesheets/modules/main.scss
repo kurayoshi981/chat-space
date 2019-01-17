@@ -34,7 +34,7 @@
         }
     &__body {
       height: calc(100vh - 15vh - 90px);
-      box-sizing: border-box;
+
 
       &-message {
         padding:26px 0 0 46px;
@@ -61,15 +61,34 @@
       box-sizing: border-box;
       height: 90px;
       margin:0;
-      padding: 10px 50px 10px 40px;
+      padding: 20px 50px 20px 40px;
       background-color: #B8C3C7;
       }
-      .form__mask {
-
-      }
-      .form__message {
-
-
+      form__message {
+        float:left;
+        padding: 100px 600px 8px 0;
+        }
+      // &__mask {
+      //   float:left;
+      //   }
+      &__mask__image{
+        float: left;
+        .icon{
+          float: left;
+         }
+        .hidden{
+          float: left;
+          }
+        }
+      &__submit {
+        float: left;
+        background-color: #38AEF0;
+        border: none;
+        color:#fff;
+        font-size:16px;
+        height:50px;
+        margin-left: 15px;
+        padding:0 30px;
       }
     }
 
