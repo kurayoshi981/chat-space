@@ -35,9 +35,12 @@
     &__body {
       height: calc(100vh - 15vh - 90px);
       // padding-bottom: 90px;
-
+      overflow: scroll;
       &-message {
         padding:26px 0 0 46px;
+        // clear: both;
+        // content: '';
+        // display: block;
         &-name {
           color: #434A54;
           font-size: 16px;
@@ -92,5 +95,4 @@
         padding:0 30px;
       }
     }
-
 

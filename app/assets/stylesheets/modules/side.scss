@@ -18,7 +18,6 @@
           &-name {
             font-size: 16px;
             font-weight: bold;
-            color: #fff;
             float: left;
             }
           &-icon {
@@ -31,11 +30,11 @@
     height: 85%;
     width: 100%;
     background-color: #2f3e51;
-
+    color:#fff;
     &-content {
       height: 50px;
       width: 100%;
-      padding:20px 20px 40px;
+      padding:20px 0 40px 20px;
       text-decoration: none;
       &-name {
         font-size: 50px;
