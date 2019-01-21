@@ -37,36 +37,34 @@
           }
       }
 
-  &__groups {
-    height: 85%;
-    width: 100%;
-    background-color: #2f3e51;
-    }
+&__groups {
+  height: 85%;
+  width: 100%;
+  background-color: #2f3e51;
+  }
 
-  .chat-side__group {
-    padding: 10px;
-    float:left;
-    }
+.chat-side__group {
+  padding: 10px;
+  float:left;
+  }
 
-  .chat-side__group-name p{
-    font-size: 15px;
-    padding:0 20px;
-    }
+.chat-side__group-name p{
+  font-size: 15px;
+  padding:0 20px;
+  }
 
-  .chat-side__group-message  p{
-    font-size: 11px;
-    padding: 5px 20px 0;
-
-    }
+.chat-side__group-message  p{
+  font-size: 11px;
+  padding: 5px 20px 0;
   }
 
 .link  {
   text-decoration: none;
   color:white;
   margin:100px;
-}
+  }
 
 .icon  {
   text-decoration: none;
   color:white;
-}
+  }
