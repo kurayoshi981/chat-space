@@ -1,17 +1,20 @@
 $(function(){
   function buildHTML(message){
-    var html = ` <div class="main__body-message">
-                    <div class="main__body-message-name">
-                      ${message.user_name}
+    var html = `<div class="chat-main__body">
+                  <div class="chat-main__body-list">
+                    <div class="main__message">
+                      <div class="chat-main__message-name">
+                        ${message.user_name}
+                      </div>
+                      <div class="chat-main__message-time">
+                        ${message.created_at}
+                      </div>
+                      <div class="chat-main__message-body">
+                        <p class="lower-message__content">${message.content }</p>
+                      </div>
                     </div>
-
-                    <div class="main__body-message-time">
-                      ${message.created_at}
-                    </div>
-                    <div class="main__body-message-body">
-                      <p class="lower-message__content">${message.content }</p>
-                    </div>
-                  </div>`
+                  </div>
+                </di>`
     return html;
   }
 
@@ -30,20 +33,12 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
+      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+
     })
     .fail(function(){
       alert('error');
     })
   })
 });
-
-
-
-
-
-
-
-
-
-
 

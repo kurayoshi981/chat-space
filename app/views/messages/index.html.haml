@@ -1,14 +1,14 @@
 .wrapper
   = render 'shared/side_bar'
 
-.main
-  .main__header
-    .main__header-group
-      .main__header-group-name
+.chat-main
+  .chat-main__header
+    .chat-main__header-group
+      .chat-main__header-group-name
         グループ名が表示される
-      .main__header-group-edit-btn{href: '/'}
+      %a.chat-main__header-group-edit-btn{href: '/'}
         Edit
-      .main__header-member
+      .chat-main__header-members
         メンバー名が表示される
 
   .messages
@@ -18,8 +18,8 @@
   .main__form
     = form_for [@group, @message], html: { class: 'new_message' } do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-      / .form__mask
+      .form__mask
       = f.label :image, class: 'form__mask__image' do
         = fa_icon 'picture-o', class: 'icon'
         = f.file_field :image, class: 'hidden'
-      = f.submit 'Send', class: 'form__submit'
+        = f.submit 'Send', class: 'form__submit'

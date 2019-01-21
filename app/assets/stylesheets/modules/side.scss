@@ -1,52 +1,72 @@
-.side {
+.chat-side {
   height: 100vh;
   width: 300px;
   float: left;
   color: #fff;
+  text-decoration: none;
     &__user {
       height: 15%;
       width: 100%;
       background-color: #253141;
-      display: flex;
-      align-items: center;
+      position:relative;
         &-content {
           height: 50px;
           width: 100%;
-          line-height: 50px;
-          margin: 0 20px ;
+          margin: auto 0;
+          position: absolute;
           }
-          &-name {
-            font-size: 16px;
-            font-weight: bold;
-            float: left;
-            }
-          &-icon {
-            float: right;
-            color: #fff;
-            }
+        &-name {
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+          display: inline-block;
+          position: relative;
+          margin:40px 20px;
+          }
+        &--new-group{
+          color: #fff;
+          position: relative;
+          display: inline-block;
+          float:right;
+          margin:40px 20px;
+          }
+        &-icon {
+          margin: 50px;
+          float: right;
+          color: #fff;
+          }
       }
 
-  &__group {
+  &__groups {
     height: 85%;
     width: 100%;
     background-color: #2f3e51;
-    color:#fff;
-    &-content {
-      height: 50px;
-      width: 100%;
-      padding:20px 0 40px 20px;
-      text-decoration: none;
-      &-name {
-        font-size: 50px;
-        color: #fff;
-        text-decoration: none;
-        }
-      &-message {
-        font-size: 11px;
-        padding-top: 5px;
-        color: #fff;
-        }
-      }
+    }
+
+  .chat-side__group {
+    padding: 10px;
+    float:left;
+    }
+
+  .chat-side__group-name p{
+    font-size: 15px;
+    padding:0 20px;
+    }
+
+  .chat-side__group-message  p{
+    font-size: 11px;
+    padding: 5px 20px 0;
+
     }
   }
 
+.link  {
+  text-decoration: none;
+  color:white;
+  margin:100px;
+}
+
+.icon  {
+  text-decoration: none;
+  color:white;
+}
