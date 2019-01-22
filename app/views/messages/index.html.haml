@@ -5,14 +5,15 @@
   .chat-main__header
     .chat-main__header-group
       .chat-main__header-group-name
-        グループ名が表示される
+        = @group.name
       %a.chat-main__header-group-edit-btn{href: '/'}
         Edit
       .chat-main__header-members
-        メンバー名が表示される
-
+        Member：
+        - @group.users.each do |user|
+          = user.name
   .messages
-    = render partial: 'message', collection: @messages
+    = render @messages
 
 
   .main__form

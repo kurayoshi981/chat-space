@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Message, type: :model do
   describe '#create' do
     context 'can save' do
-      it 'is valid with content' do
+      it 'is valid with boby' do
         expect(build(:message, image: nil)).to be_valid
       end
 
