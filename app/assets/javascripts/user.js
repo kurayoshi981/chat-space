@@ -45,7 +45,6 @@ $(document).on('turbolinks:load', function(){
         data.forEach(function(user){
         var html = displayUser(user);
         $('#user-search-result').append(html);
-        console.log(user)
         })
       }
       else {
