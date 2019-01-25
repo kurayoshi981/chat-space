@@ -34,8 +34,6 @@ $(document).on('turbolinks:load', function(){
       url: '/users',
       type: 'GET',
       data: {keyword: input},
-      processData: false,
-      contentType: false,
       dataType: 'json'
       })
 
