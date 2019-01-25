@@ -8,29 +8,26 @@
   box-sizing: border-box;
   height: 15vh;
   padding: 0 40px;
-  }
-
-.chat-main__header-group {
-  height:50px;
-  margin: 0 40px;
-  }
-
-.chat-main__header-group-name {
-  font-size:20px;
-  width: 50%;
-  color:#333;
-  margin:35px 0 15px;
-  float: left;
-  }
-
-.chat-main__header-group-edit-btn {
-  margin: 28px 20px 0;
-  text-decoration: none;
-  width: 20px;
-  border: solid 1px #38AEF0;
-  font-size: 15px;
-  padding: 12.5px 20px;
-  float: right;
+  &-group {
+    height:50px;
+    margin: 0 40px;
+    &-name {
+      font-size:20px;
+      width: 50%;
+      color:#333;
+      margin:35px 0 15px;
+      float: left;
+      }
+    &-edit-btn {
+      margin: 28px 20px 0;
+      text-decoration: none;
+      width: 20px;
+      border: solid 1px #38AEF0;
+      font-size: 15px;
+      padding: 12.5px 20px;
+      float: right;
+      }
+    }
   }
 
 .chat-main__header-members {
@@ -38,6 +35,7 @@
   color: #999;
   clear:left;
   }
+
 
 
 // チャット部分
@@ -55,20 +53,18 @@
   clear: both;
   content: '';
   display: block;
-  }
-
-.chat-main__message-name {
-  color: #434A54;
-  font-size: 16px;
-  font-weight: bold;
-  float: left;
-  }
-
-.chat-main__message-time {
-  color: silver;
-  font-size: 12px;
-  font-weight: bold;
-  float:left;
+  &-name {
+    color: #434A54;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    }
+  &-time {
+    color: silver;
+    font-size: 12px;
+    font-weight: bold;
+    float:left;
+    }
   }
 
 .chat-main__message-body {
@@ -89,17 +85,10 @@
   padding: 7px 350px;
   }
 
-
 .form__mask {
   float:left;
   }
 
-.form__mask__image{
-
-  }
-.icon{
-
-  }
 .hidden{
   display: none;
   }
@@ -110,7 +99,6 @@
   color:#fff;
   font-size:16px;
   height:50px;
-  margin-left: 15px;
   padding:0 30px;
   float: right;
   }

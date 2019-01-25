@@ -52,6 +52,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capybara'
   gem 'erb2haml'
+  gem "pry-rails"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -61,5 +62,3 @@ end
   gem "font-awesome-rails"
   gem 'carrierwave'
   gem 'mini_magick'
-
-  gem "pry-rails"
