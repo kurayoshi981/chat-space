@@ -1,0 +1,71 @@
+.chat-side {
+  height: 100vh;
+  width: 300px;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+    &__user {
+      height: 15%;
+      width: 100%;
+      background-color: #253141;
+      position:relative;
+        &-content {
+          height: 50px;
+          width: 100%;
+          margin: auto 0;
+          position: absolute;
+          }
+        &-name {
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+          display: inline-block;
+          position: relative;
+          margin:40px 20px;
+          }
+        &--new-group{
+          color: #fff;
+          position: relative;
+          display: inline-block;
+          float:right;
+          margin:40px 20px;
+          }
+        &-icon {
+          margin: 50px;
+          float: right;
+          color: #fff;
+          }
+      }
+
+
+&__groups {
+  height: 85%;
+  width: 100%;
+  background-color: #2f3e51;
+  }
+
+.chat-side__group {
+  padding: 10px;
+  float:left;
+  &-name p{
+    font-size: 15px;
+    padding:0 20px;
+    }
+  &-message  p{
+    font-size: 11px;
+    padding: 5px 20px 0;
+    }
+  }
+}
+
+.link  {
+  text-decoration: none;
+  color:white;
+  margin:100px;
+  }
+
+.icon  {
+  text-decoration: none;
+  color:white;
+  }
+
