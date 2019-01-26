@@ -42,6 +42,7 @@ $(function(){
     })
   })
 
+// 自動更新
 var interval = setInterval(function(){
   var  = $('.message').last().data('message-id');
 
