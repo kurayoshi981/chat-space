@@ -41,5 +41,24 @@ $(function(){
       alert('error');
     })
   })
+
+var interval = setInterval(function(){
+  var  = $('.message').last().data('message-id');
+
+    if (window.location.href.mach()
+
+
+  .done(function(){
+
+
+  }
+
+
+  .fail(function()){
+    alert('自動更新に失敗しました');
+  })
+}
+
+
 });
 
