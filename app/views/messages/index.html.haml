@@ -6,15 +6,13 @@
     .chat-main__header-group
       .chat-main__header-group-name
         = @group.name
-
       = link_to 'edit','edit', class: 'chat-main__header-group-edit-btn'
       .chat-main__header-members
         Member：
         - @group.users.each do |user|
           = user.name
-  .messages
+  .chat-flaim
     = render @messages
-
 
   .main__form
     = form_for [@group, @message], html: { class: 'new_message' } do |f|
