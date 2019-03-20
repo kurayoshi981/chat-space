@@ -42,7 +42,8 @@ Association
   ・ has_many:users,through:members
 
 
-  messagesテーブル
+messagesテーブル
+
 | Column | Type | Options |
 |--------|------|---------|
 | body | text | |
