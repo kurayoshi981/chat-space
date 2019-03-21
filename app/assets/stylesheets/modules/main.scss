@@ -39,14 +39,20 @@
 
 
 // チャット部分
-.messages {
+.chat-flaim {
   height: calc(100vh - 15vh - 90px);
   overflow-y: scroll;
+  padding-left: 40px;
+}
+
+.messages {
+  height:100px;
+
+
   }
 
 .chat-main__body {
   padding-top: 26px;
-  padding-left: 40px;
   }
 
 .chat-main__message {
@@ -58,6 +64,7 @@
     font-size: 16px;
     font-weight: bold;
     float: left;
+    margin-right: 10px;
     }
   &-time {
     color: silver;
