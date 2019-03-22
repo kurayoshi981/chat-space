@@ -46,13 +46,7 @@
 }
 
 .messages {
-  height:100px;
-
-
-  }
-
-.chat-main__body {
-  padding-top: 26px;
+  padding: 20px 0;
   }
 
 .chat-main__message {
@@ -79,33 +73,85 @@
   clear:both;
   }
 
+img {
+ max-width: 100%;
+}
+
+  // .lower-message__image {
+  //   width: 200px;
+  //   height: 200px;
+  // }
+
 // チャットのフッター
-.main__form {
+// .main__form {
+//   box-sizing: border-box;
+//   height: 90px;
+//   margin:0;
+//   padding: 20px 50px 20px 40px;
+//   background-color: #B8C3C7;
+//   }
+
+// .form__message {
+//   padding: 7px 350px;
+//   }
+
+// .form__mask {
+//   float:left;
+//   }
+
+// .hidden{
+//   display: none;
+//   }
+
+// .form__submit {
+//   background-color: #38AEF0;
+//   border: none;
+//   color:#fff;
+//   font-size:16px;
+//   height:50px;
+//   padding:0 30px;
+//   float: right;
+//   }
+
+  .form {
+  background-color: #B8C3C7;
   box-sizing: border-box;
   height: 90px;
-  margin:0;
+  width: calc(100vw - 300px);
   padding: 20px 50px 20px 40px;
-  background-color: #B8C3C7;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  &__message {
+    border: none;
+    float: left;
+    height: 50px;
+    width: calc(100% - 150px);
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+  &__mask {
+    background-color: white;
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+    &__image {
+      font-size: 20px;
+      line-height: 50px;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  &__submit {
+    background-color: #38AEF0;
+    border: none;
+    color: white;
+    float: right;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 30px;
+    }
   }
 
-.form__message {
-  padding: 7px 350px;
-  }
-
-.form__mask {
-  float:left;
-  }
-
-.hidden{
-  display: none;
-  }
-
-.form__submit {
-  background-color: #38AEF0;
-  border: none;
-  color:#fff;
-  font-size:16px;
-  height:50px;
-  padding:0 30px;
-  float: right;
-  }

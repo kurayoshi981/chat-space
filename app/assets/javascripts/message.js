@@ -1,20 +1,22 @@
 $(function(){
   function buildHTML(message){
+    image = (message.image === null) ? "" : `<img src="${message.image}" class="lower-message__image">`
     var html = `<div class="messages data-message-id="${ message.id }">
-                  <div class"chat-main__body">
-                    <div class="main__message">
-                      <div class="chat-main__message-name">
-                        ${message.user_name}
-                      </div>
-                      <div class="chat-main__message-time">
-                        ${message.created_at}
-                      </div>
-                      <div class="chat-main__message-body">
-                        <p class="lower-message__content">${message.content}</p>
-                      </div>
+                  <div class="chat-main__message">
+                    <div class="chat-main__message-name">
+                      ${message.user_name}
+                    </div>
+                    <div class="chat-main__message-time">
+                      ${message.created_at}
                     </div>
                   </div>
-                </div>`
+                  <div class="chat-main__message-body">
+                    <p class="lower-message__content">
+                      ${message.content}
+                    </p>
+                  </div>
+                </div>
+                ${image}`
     return html;
   }
 
